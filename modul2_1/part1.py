@@ -30,5 +30,14 @@ print(number2)
 print(number1)
 
 print('Return from print: ', print(37))
-input('Input data here: ')
-# pauza
+result1 = input('Input data1 here: ')
+print(result1)
+result2 = input('Input data2 here: ')
+print(result2)
+# print(type(result))
+print('Result of add str: ', result1 + result2)
+print('Result of add int: ', int(result1) + int(result2))
+# True = 3
+print(True)
+print(False)
+print(type(True))
