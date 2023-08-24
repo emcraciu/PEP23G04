@@ -1,3 +1,4 @@
+# 01P - Teodor
 height = input('Enter height: ')
 base = input('Enter base: ')
 result = (int(height) * int(base)) / 2
