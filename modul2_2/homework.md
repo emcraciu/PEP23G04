@@ -1,0 +1,1 @@
+Points: 5, 6, 7 from lab
