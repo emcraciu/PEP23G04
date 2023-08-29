@@ -14,4 +14,15 @@ print(string1, string2, string3, string4, string5, sep='\t')
 string_with_quotes = 'my string \''
 print(string_with_quotes)
 
+# String methods
+my_string = 'Hello World, {} {}'
+my_string = my_string.format('Python', 'User')
+print(my_string)
 
+my_string = 'Hello World, {1} {0}'
+my_string = my_string.format('Python', 'User')
+print(my_string)
+
+my_string = 'Hello World, {arg1} {arg2}'
+my_string = my_string.format(arg1='Python', arg2='User', arg3='None')
+print(my_string)
