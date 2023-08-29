@@ -30,3 +30,33 @@ print(my_string)
 
 print(len(my_string))
 
+
+print('___'.center(11, '#'))
+
+my_string = 'Hello World'
+
+print(my_string[0])
+
+#'HelloWorld'
+# 0123456789
+# -10-9-8-7-6-5-4-3-2-1
+
+# index
+print(my_string[len(my_string) - 1])
+print(my_string[-1])
+print(my_string[-3])
+
+# slice
+print(my_string[0:3])
+print(my_string[-5:-1])
+print(my_string[-5:])
+print(my_string[:-2])
+print(my_string[:])
+
+# step
+
+print(my_string[0:7:1])
+print(my_string[::-1])
+print(my_string[::-2])
+
+
