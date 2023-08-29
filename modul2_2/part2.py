@@ -26,3 +26,7 @@ print(my_string)
 my_string = 'Hello World, {arg1} {arg2}'
 my_string = my_string.format(arg1='Python', arg2='User', arg3='None')
 print(my_string)
+
+
+print(len(my_string))
+
