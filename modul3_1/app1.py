@@ -1,5 +1,5 @@
 curr_year = 2023
-id = input('first 7 number from cnp: ')
+id = input('Introduceti primele 7 cifre din CNP: ')
 if len(id) != 7:
     print('not enough characters')
 else:
