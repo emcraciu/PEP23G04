@@ -3,12 +3,12 @@ username = input('Introduceti un nume de utilizator: ')
 
 def validare_parola(password):
     result = True
+    # if {'%', '!', '@'}.symmetric_difference(set(password)):
     if '%' not in password and '!' not in password and '@' not in password:
         print('Parola trebuie sa contina unul dintre urmatoarele caractere: %, @, !')
         result = False
     for i in range(10):
         i = str(i)
-
         if i in password:
             break
     else:
