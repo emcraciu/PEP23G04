@@ -55,13 +55,16 @@ def divide(number1, number2):
     #     return 'infinit'
     result = 'infinit'
     try:
-        print(abcd)
+        # print(abcd)
         result = number1/number2
     except ZeroDivisionError:
-        print('something is wrong')
+        pass
+        #print('something is wrong')
     except NameError:
         print('something else was wrong')
         result = 'could not calculate'
+    else:
+        print('success')
     return result
 
 r = divide(1, 1)
