@@ -23,3 +23,4 @@ def best_buy(shops: dict, cart: dict) -> str:  # variable number of arguments):
     return ''
 
 best_buy(shops, shopping_cart)
+pauza
