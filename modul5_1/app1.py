@@ -1,3 +1,3 @@
-import test1
+import random
 
-test1.test()
+print(random.choice(['piatra', 'foarfeca', 'hartie']))
