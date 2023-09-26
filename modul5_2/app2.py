@@ -34,19 +34,19 @@ for letter in original_text:
         result += letter
 print(result)
 
-sentences = result.split('. ')
+sentences = result.split('.')
 print(sentences)
 sentences1 = []
 for sentence in sentences:
-    sentences1.append(sentence.capitalize())
-    # result = ''
-    # sentence1 = sentences.__iter__()
-    # for letter in sentence1:
-    #     if letter.isalpha():
-    #         result += letter.upper()
-    #         result += ''.join(sentence1)
-    #     else:
-    #         result += letter
+    # sentences1.append(sentence.capitalize())
+    result = ''
+    sentence1 = sentence.__iter__()
+    for letter in sentence1:
+        if letter.isalpha():
+            result += letter.upper()
+            result += ''.join(sentence1)
+        else:
+            result += letter
 
-    # sentences1.append(result)
-print('. '.join(sentences1))
+    sentences1.append(result)
+print('.'.join(sentences1))
