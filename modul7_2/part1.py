@@ -1,14 +1,14 @@
 from modul7_1.part1 import Car
 
-class Logan(Car):
+class Logan1(Car):
     color = 'white'
 
-l = Logan()
+l = Logan1()
 l.drive()
 
 from modul7_1.part2 import Car
 
-class Logan(Car):
+class Logan2(Car):
     color = 'white'
     nav = True
 
@@ -17,5 +17,5 @@ class Logan(Car):
         self.nav = nav
 
 
-l = Logan(nav=True)
+l = Logan2(nav=True, color='green')
 l.drive()
