@@ -12,7 +12,8 @@ class Car(object):
         self.color = color
 
     def drive(self):
-        if hasattr(self, 'nav') and self.nav:  # self.nav:
+        if getattr(self, 'nav', False):
+        #if hasattr(self, 'nav') and self.nav:  # self.nav:
             print(f'Driving {self.color} {self.__class__.__name__} with nav ...')
         else:
             print(f'Driving {self.color} {self.__class__.__name__} ...')
@@ -36,3 +37,11 @@ l.drive()
 
 c = Car()
 c.drive()
+
+
+print('Dot notation', c.color)
+print('Get function:', getattr(c, 'color'))
+setattr(c, 'color2', 'yellow')
+print('Set function', c.color2)
+c.color2 = 'blue'
+print('Dot notation', c.color2)
