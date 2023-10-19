@@ -47,9 +47,20 @@ class MyPasswordGen:
 
 password = MyPasswordGen(10)
 print(password.generate_password())
-
+print('#' * 80)
 for letter in password:
     print(letter)
 
-
 #### generator
+print('#' * 80)
+
+
+def generator(number_of_letters):
+    while number_of_letters > 0:
+        number_of_letters -= 1
+        yield chr(randint(33, 127))
+
+
+my_gen = generator(10)
+for letter in my_gen:
+    print(letter)
