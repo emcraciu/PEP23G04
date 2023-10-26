@@ -22,6 +22,38 @@ Iterating the object will return all cars that are still covered by 3 years warr
    d) 5p: method documentation for all methods
 """
 
-def my_func():
-    '''documentation for function'''
-    pass
+# def my_func():
+#     '''documentation for function'''
+#     pass
+
+from datetime import datetime
+
+
+class Warranty:
+    def __init__(self):
+        self.warranties = {}
+
+    def __iter__(self):
+        return WarrantyIterator()
+
+    def add_car(self, serial_number, date):
+        self.warranties.update({serial_number: date})
+
+    def get_expired_warraties(self):
+        result = datetime.now()
+        print(result)
+        print(type(result))
+
+
+class WarrantyIterator:
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        pass
+
+
+w = Warranty()
+w.add_car(1588, '20 Jan 2019 10:30:32')
+print(w.warranties)
+w.get_expired_warraties()
