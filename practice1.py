@@ -21,3 +21,7 @@ Iterating the object will return all cars that are still covered by 3 years warr
    c) 5p: class documentation for all classes
    d) 5p: method documentation for all methods
 """
+
+def my_func():
+    '''documentation for function'''
+    pass

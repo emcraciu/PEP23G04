@@ -48,7 +48,7 @@ class Shop:
         if not self.categories.get(category, False):
             self.categories.update({category: []})
         else:
-            self.categories[category] += [{'bla': 'test'}]
+            self.categories[category] += [{'bla': 'test.py'}]
         print(self.categories)
 
     def __get_option(self, menu, menu_options):
